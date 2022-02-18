@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="316.0" style="-fx-background-color: #ffff;" stylesheets="@../assets/css/dashboard.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StepElementController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="307.0" spacing="10.0">
+         <children>
+            <Label fx:id="stepDescription" prefHeight="50.0" prefWidth="212.0">
+               <graphic>
+                  <Label fx:id="idStep" prefWidth="0.0" visible="false" />
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnComplete" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleBtnCompleteClicked" prefHeight="17.0" prefWidth="17.0" stylesheets="@../assets/css/todolist.css">
+               <styleClass>
+                  <String fx:value="post-background" />
+                  <String fx:value="round-button" />
+               </styleClass>
+               <graphic>
+                  <ImageView fx:id="imgState" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons/microsoft-todo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnRemove" mnemonicParsing="false" onAction="#handleBtnRemoveClicked" prefHeight="24.0" prefWidth="18.0" stylesheets="@../assets/css/todolist.css">
+               <styleClass>
+                  <String fx:value="post-background" />
+                  <String fx:value="round-button" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons/icons8-remove-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <styleClass>
+      <String fx:value="white-background" />
+      <String fx:value="shadow" />
+      <String fx:value="rect-round" />
+   </styleClass>
+</VBox>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="postContainer" spacing="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PostStatusController">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="1120.0" spacing="10.0" style="-fx-background-color: #ffff;" styleClass="post-background" stylesheets="@../assets/css/post.css">
+         <children>
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="1120.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="imgAvatar" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/avatar/default/male.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="contentStatus" prefHeight="50.0" prefWidth="1028.0" promptText="What on your mind?" styleClass="text-field" stylesheets="@../assets/css/post.css">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <Line endX="100.0" startX="-1019.892333984375" startY="0.2928932309150696" stroke="#cfd8dc" />
+            <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="1120.0" spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="38.0" prefWidth="1122.0">
+                     <children>
+                        <JFXButton prefHeight="40.0" prefWidth="369.0" text="Documents" textFill="#64b5f6">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/icons/icons8-document-96.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="btnOpenImage" onAction="#chooseImageHandler" prefHeight="40.0" prefWidth="366.0" text="Images" textFill="#f57c00">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/icons/icons8-gallery-96.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton prefHeight="40.0" prefWidth="385.0" text="Feeling / Activities" textFill="#fdd835">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/icons/icons8-smile-100.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <Line endX="100.0" startX="-1019.892333984375" startY="0.2928932309150696" stroke="#cfd8dc" />
+                  <ImageView fx:id="image" fitHeight="605.0" fitWidth="1090.0" pickOnBounds="true" preserveRatio="true" />
+                  <JFXButton fx:id="btnPostStatus" onAction="#PostStatusHandler" prefHeight="49.0" prefWidth="1102.0" style="-fx-background-color: #1e88e5#1e88e5;" styleClass="rect-round" stylesheets="@../assets/css/dashboard.css" text="Post" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </VBox>
+      <Line endX="100.0" startX="-1019.892333984375" startY="0.2928932309150696" stroke="#cfd8dc" />
+      <VBox fx:id="statusContainer" prefHeight="0.0" prefWidth="1122.0" spacing="12.0" />
+   </children>
+</VBox>

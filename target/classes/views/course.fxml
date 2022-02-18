@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="360.0" style="-fx-background-color: #fff;" stylesheets="@../assets/css/dashboard.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CourseController">
+   <children>
+      <ImageView fx:id="img" fitHeight="270.0" fitWidth="360.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images/algorithm_background/sorting.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="algorithmName" prefHeight="33.0" prefWidth="180.0" style="-fx-background-radius: 7; -fx-border-radius: 7;" stylesheets="@../assets/css/dashboard.css" text="Sorting">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="primary-color" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Pane prefHeight="54.0" prefWidth="68.0" />
+            <JFXButton fx:id="btnTraining" prefHeight="39.0" prefWidth="102.0" style="-fx-background-color: #039be5;" text="Training" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+      <Line endX="259.79290771484375" endY="0.7928932309150696" fill="#bdbdbd" startX="-100.0" stroke="#bdbdbd" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label fx:id="content1" prefHeight="33.0" prefWidth="75.0" style="-fx-background-radius: 7; -fx-border-radius: 7; -fx-background-color: #9e9e9e#9e9e9e;" stylesheets="@../assets/css/dashboard.css" text="Array">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="primary-color" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="content2" prefHeight="33.0" prefWidth="91.0" style="-fx-background-radius: 7; -fx-border-radius: 7; -fx-background-color: #9e9e9e#9e9e9e;" stylesheets="@../assets/css/dashboard.css" text="Algorithm">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="primary-color" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="content3" prefHeight="33.0" prefWidth="63.0" style="-fx-background-radius: 7; -fx-border-radius: 7; -fx-background-color: #9e9e9e#9e9e9e;" stylesheets="@../assets/css/dashboard.css" text="buble">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="primary-color" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="content4" prefHeight="33.0" prefWidth="84.0" style="-fx-background-radius: 7; -fx-border-radius: 7; -fx-background-color: #9e9e9e#9e9e9e;" stylesheets="@../assets/css/dashboard.css" text="select">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="primary-color" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+   <styleClass>
+      <String fx:value="white-background" />
+      <String fx:value="shadow" />
+      <String fx:value="rect-round" />
+   </styleClass>
+</VBox>

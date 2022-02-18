@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <left>
+        <VBox prefHeight="200.0" prefWidth="300.0" styleClass="white-background" stylesheets="@../assets/css/dashboard.css" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/images/system_img/logo.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="75.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/images/system_img/logo-homepage.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <padding>
+                        <Insets left="15.0" />
+                    </padding>
+                </HBox>
+                <VBox alignment="CENTER" prefHeight="260.0" prefWidth="300.0" spacing="5.0">
+                    <children>
+                        <ImageView fitHeight="160.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/images/system_img/me.jpeg" />
+                            </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="12.0" prefWidth="272.0" text="Quoc Nguyen">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="14.0" prefWidth="272.0" text="\@quocnguyen" textFill="GREY">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox prefHeight="493.0" prefWidth="300.0" spacing="12.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
+                            <children>
+                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/icons/book.png" />
+                                    </image>
+                                </ImageView>
+                                <Label text="Course">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="15.0">
+                            <children>
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/icons/windows.png" />
+                                    </image>
+                                </ImageView>
+                                <Label text="Forum">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
+                            <children>
+                                <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/icons/quizlet.png" />
+                                    </image>
+                                </ImageView>
+                                <Label text="Quiz">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets right="18.0" />
+                                    </padding>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="15.0">
+                            <children>
+                                <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/icons/icons8-todo-list-96.png" />
+                                    </image>
+                                </ImageView>
+                                <Label text="To Do">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="14.0">
+                            <children>
+                                <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/icons/member.png" />
+                                    </image>
+                                </ImageView>
+                                <Label text="Users">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
+                            <children>
+                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/icons/customer.png" />
+                                    </image>
+                                </ImageView>
+                                <Label text="Profile">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
+                            <children>
+                                <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/icons/setting.png" />
+                                    </image>
+                                </ImageView>
+                                <Label text="Setting">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
+                            <children>
+                                <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/icons/logout.png" />
+                                    </image>
+                                </ImageView>
+                                <Label text="Setting">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </left>
+</BorderPane>

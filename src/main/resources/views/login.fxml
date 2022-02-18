@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="1009.0" stylesheets="@../assets/css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <AnchorPane prefHeight="664.0" prefWidth="568.0">
+         <children>
+            <ImageView fitHeight="664.0" fitWidth="634.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/system_img/login.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="568.0" prefHeight="664.0" prefWidth="449.0" style="-fx-background-color: #fafafa;" stylesheets="@../assets/css/style.css">
+         <children>
+            <Label layoutX="14.0" layoutY="32.0" prefHeight="35.0" prefWidth="110.0" text="Hello,">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="75.0" text="Welcome back">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="19.0" layoutY="270.0" prefHeight="55.0" prefWidth="399.0" promptText="Username" style="-fx-background-radius: 7; -fx-border-radius: 7;" stylesheets="@../assets/css/style.css">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="21.0" layoutY="350.0" prefHeight="55.0" prefWidth="399.0" promptText="Password" style="-fx-background-radius: 7; -fx-border-radius: 7;" stylesheets="@../assets/css/style.css">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </PasswordField>
+            <JFXButton fx:id="btnLogin" layoutX="22.0" layoutY="426.0" prefHeight="61.0" prefWidth="399.0" style="-fx-background-radius: 7; -fx-border-radius: 7;" stylesheets="@../assets/css/style.css" text="Login" textFill="#fafafa">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Line endX="287.5" layoutX="124.0" layoutY="500.0" startX="-100.0" stroke="#bcbcbc" />
+            <JFXButton fx:id="btnSignUp" layoutX="21.0" layoutY="516.0" prefHeight="55.0" prefWidth="399.0" style="-fx-background-radius: 7; -fx-border-radius: 7;" stylesheets="@../assets/css/style.css" text="Create New Account" textFill="#fafafa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="126.0" fitWidth="140.0" layoutX="151.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/system_img/logo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="notiLable" layoutX="23.0" layoutY="586.0" prefHeight="55.0" prefWidth="399.0" textFill="#e10c0c" visible="false">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

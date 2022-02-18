@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DashboardController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #fff;" styleClass="white-background" stylesheets="@../assets/css/dashboard.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/system_img/logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="75.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/system_img/logo-homepage.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="260.0" prefWidth="300.0" spacing="5.0">
+               <children>
+                  <ImageView fx:id="imgUser" fitHeight="160.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="firstAndSurName" alignment="CENTER" prefHeight="12.0" prefWidth="272.0" text="Quoc Nguyen">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="username" alignment="CENTER" prefHeight="14.0" prefWidth="272.0" text="\@quocnguyen" textFill="GREY">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="493.0" prefWidth="300.0" spacing="12.0">
+               <children>
+                  <JFXButton fx:id="btnCourse" onAction="#handleCourseClicked" prefHeight="50.0" prefWidth="300.0" stylesheets="@../assets/css/dashboard.css" text="Course">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/book.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnForum" onAction="#handleForumClicked" prefHeight="50.0" prefWidth="300.0" text="Forum">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/windows.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnQuiz" prefHeight="50.0" prefWidth="300.0" text="Quiz">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/quizlet.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnToDo" onAction="#handleToDoClicked" prefHeight="50.0" prefWidth="300.0" text="To Do">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/icons8-todo-list-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnUsers" prefHeight="50.0" prefWidth="300.0" text="Users">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/member.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnProfile" prefHeight="50.0" prefWidth="300.0" text="Profile">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSetting" onAction="#handleBtnSettingClicked" prefHeight="50.0" prefWidth="300.0" text="Setting">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/setting.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnLogout" onAction="#handleLogOutClicked" prefHeight="50.0" prefWidth="300.0" text="Log out">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="primary-color" stylesheets="@../assets/css/dashboard.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="75.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="45.0" prefWidth="225.0" spacing="10.0" style="-fx-background-color: #fff;" stylesheets="@../assets/css/dashboard.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/select.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="titlePage" prefHeight="27.0" prefWidth="168.0" text="Dashboard">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="primary-color" />
+                        <String fx:value="shadow" />
+                        <String fx:value="rect-round" />
+                        <String fx:value="mouse-moved" />
+                        <String fx:value="selected" />
+                     </styleClass>
+                  </HBox>
+                  <Pane prefHeight="75.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="45.0" prefWidth="330.0" spacing="10.0" style="-fx-background-color: #fff;" stylesheets="@../assets/css/dashboard.css">
+                     <children>
+                        <TextField prefHeight="26.0" prefWidth="267.0" promptText="Search" styleClass="transparent" stylesheets="@../assets/css/dashboard.css" />
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/search.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <styleClass>
+                        <String fx:value="primary-color" />
+                        <String fx:value="shadow" />
+                        <String fx:value="rect-round" />
+                     </styleClass>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+            <Label fx:id="titleContent" prefHeight="59.0" prefWidth="145.0" text="Algorithms" visible="false">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Label>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" styleClass="transparent" stylesheets="@../assets/css/dashboard.css" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+               <content>
+                  <GridPane fx:id="sourceGird">
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

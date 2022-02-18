@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="591.0" prefWidth="500.0" style="-fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: #ffffff; -fx-background-radius: 7; -fx-border-radius: 7;" stylesheets="@../assets/css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignUpController">
+   <children>
+      <AnchorPane prefHeight="127.0" prefWidth="500.0" style="-fx-background-color: #2196f3;" stylesheets="@../assets/css/style.css">
+         <children>
+            <Label layoutX="26.0" layoutY="25.0" style="-fx-font-weight: bold;" text="Sign Up" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="79.0" text="It's quick and easy." textFill="#fafafa">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="firstName" layoutX="14.0" layoutY="141.0" prefHeight="50.0" prefWidth="232.0" promptText="First Name" style="-fx-border-radius: 7; -fx-background-radius: 7;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="surName" layoutX="257.0" layoutY="141.0" prefHeight="50.0" prefWidth="226.0" promptText="Surname" style="-fx-background-radius: 7; -fx-border-radius: 7;" stylesheets="@../assets/css/style.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="username" layoutX="14.0" layoutY="202.0" prefHeight="50.0" prefWidth="469.0" promptText="Username" style="-fx-background-radius: 7; -fx-border-radius: 7;" stylesheets="@../assets/css/style.css">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="14.0" layoutY="327.0" text="Date of birth" textFill="#9e9e9e" />
+      <Label layoutX="14.0" layoutY="402.0" text="Gender" textFill="#9e9e9e" />
+      <ChoiceBox fx:id="day" layoutX="15.0" layoutY="350.0" prefHeight="43.0" prefWidth="145.0" style="-fx-background-color: #fafafa; -fx-border-color: #cfcfcf#cfcfcf; -fx-background-radius: 7; -fx-border-radius: 7;" stylesheets="@../assets/css/style.css" />
+      <RadioButton fx:id="male" layoutX="15.0" layoutY="433.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" selected="true" style="-fx-background-color: #fafafa; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #cfcfcf;" stylesheets="@../assets/css/style.css" text="Male">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <ChoiceBox fx:id="year" layoutX="338.0" layoutY="350.0" prefHeight="43.0" prefWidth="145.0" style="-fx-background-color: #fafafa; -fx-border-color: #cfcfcf#cfcfcf; -fx-background-radius: 7; -fx-border-radius: 7;" stylesheets="@../assets/css/style.css" />
+      <ChoiceBox fx:id="month" layoutX="178.0" layoutY="350.0" prefHeight="43.0" prefWidth="145.0" style="-fx-background-color: #fafafa; -fx-border-color: #cfcfcf#cfcfcf; -fx-background-radius: 7; -fx-border-radius: 7;" stylesheets="@../assets/css/style.css" />
+      <RadioButton fx:id="female" layoutX="257.0" layoutY="433.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #fafafa; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #cfcfcf;" stylesheets="@../assets/css/style.css" text="Female" toggleGroup="$gender">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </RadioButton>
+      <JFXButton fx:id="signup" layoutX="16.0" layoutY="516.0" prefHeight="50.0" prefWidth="469.0" style="-fx-background-color: #2196f3 #2196f3; -fx-background-radius: 7; -fx-border-radius: 7;" stylesheets="@../assets/css/style.css" text="Sign Up" textFill="#fafafa">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Line endX="361.5" layoutX="118.0" layoutY="501.0" startX="-100.0" stroke="#cfcfcf" />
+      <PasswordField fx:id="password" layoutX="16.0" layoutY="267.0" prefHeight="50.0" prefWidth="469.0" promptText="Password" style="-fx-border-radius: 7; -fx-background-radius: 7;" stylesheets="@../assets/css/style.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>
